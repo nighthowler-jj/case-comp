@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Napier's Bones | Your Analog Thinking Partner</title>
 
-  <!-- Tailwind CDN (temporary) -->
+  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Fonts -->
@@ -14,41 +14,36 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/custom.css">
 </head>
 
 <body class="font-sans antialiased selection:bg-terracotta selection:text-white">
 
-  <!-- Galaxy Background -->
   <div id="galaxy-container"></div>
 
-  <!-- Partials -->
   <div id="nav"></div>
   <div id="hero"></div>
   <div id="content"></div>
   <div id="footer"></div>
 
-  <!-- JS -->
   <script src="./js/galaxy.js" type="module"></script>
   <script src="./js/animations.js"></script>
 
-  <!-- Load partials -->
-  
-  
-<script type="module">
-  async function loadPartial(id, file) {
-    const res = await fetch(file);
-    document.getElementById(id).innerHTML = await res.text();
-  }
+  <script type="module">
+    async function loadPartial(id, file) {
+      const res = await fetch(file);
+      document.getElementById(id).innerHTML = await res.text();
+    }
 
-  loadPartial("nav", "./partials/nav.html");
-  loadPartial("hero", "./partials/hero.html");
-  loadPartial("content", "./partials/content.html");
-  loadPartial("footer", "./partials/footer.html");
-</script>
+    loadPartial("nav", "./partials/nav.html");
+    loadPartial("hero", "./partials/hero.html");
+    loadPartial("content", "./partials/content.html");
+    loadPartial("footer", "./partials/footer.html");
+  </script>
 
 </body>
 </html>
+
 
 
 
