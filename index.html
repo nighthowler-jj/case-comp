@@ -35,11 +35,7 @@
 
   <!-- Load partials -->
   
-    async function loadPartial(id, file) {
-      const res = await fetch(file);
-      document.getElementById(id).innerHTML = await res.text();
-    }
-
+  
 <script type="module">
   async function loadPartial(id, file) {
     const res = await fetch(file);
@@ -54,3 +50,4 @@
 
 </body>
 </html>
+
