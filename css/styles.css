@@ -3,6 +3,13 @@ body {
   color: #222221;
   scroll-behavior: smooth;
 }
+#bg-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: #FBF9F6;
+}
+
 
 #galaxy-container {
   position: fixed;
@@ -25,3 +32,4 @@ body {
 
 /* Bone styles (unchanged) */
 /* paste bone-rod, bone-cell, split-cell CSS here */
+
